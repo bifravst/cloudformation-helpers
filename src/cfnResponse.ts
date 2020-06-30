@@ -7,17 +7,7 @@ export enum ResponseStatus {
 	FAILED = 'FAILED',
 }
 
-export type CfnResponseSuccessArgs = {
-	/**
-	 * The status value sent by the custom resource provider in response to an AWS CloudFormation-generated request.
-	 */
-	Status: ResponseStatus.SUCCESS
-	/**
-	 * Describes the reason for a failure response.
-	 *
-	 * Reason is optional when Status is SUCCESS
-	 */
-	Reason?: string
+export type CfnResponseCommonArgs = {
 	/**
 	 * This value should be an identifier unique to the custom resource vendor, and can be up to 1 Kb in size. The value must be a non-empty string and must be identical for all responses for the same resource.
 	 */
@@ -44,10 +34,11 @@ export type CfnResponseFuncResult = {
 	/**
 	 * The update sent to CloudFormation
 	 */
-	status: Pick<
-		CfnResponseSuccessArgs,
-		'Reason' | 'PhysicalResourceId' | 'Data'
-	> & {
+	status: Pick<CfnResponseCommonArgs, 'PhysicalResourceId' | 'Data'> & {
+		/**
+		 * The status value sent by the custom resource provider in response to an AWS CloudFormation-generated request.
+		 */
+		Status: ResponseStatus
 		/**
 		 * Indicates whether to mask the output of the custom resource when retrieved by using the Fn::GetAtt function.
 		 * If set to true, all returned values are masked with asterisks (*****), except for those stored in the Metadata section of the template.
@@ -81,9 +72,25 @@ export type CfnResponseFuncResult = {
 }
 
 export type CfnResponseFunc = {
-	(args: CfnResponseSuccessArgs): Promise<CfnResponseFuncResult>
 	(
-		args: CfnResponseSuccessArgs & {
+		args: CfnResponseCommonArgs & {
+			/**
+			 * The status value sent by the custom resource provider in response to an AWS CloudFormation-generated request.
+			 */
+			Status: ResponseStatus.SUCCESS
+			/**
+			 * Describes the reason for a failure response.
+			 *
+			 * Reason is optional when Status is SUCCESS
+			 */
+			Reason?: string
+		},
+	): Promise<CfnResponseFuncResult>
+	(
+		args: CfnResponseCommonArgs & {
+			/**
+			 * The status value sent by the custom resource provider in response to an AWS CloudFormation-generated request.
+			 */
 			Status: ResponseStatus.FAILED
 			/**
 			 * Describes the reason for a failure response.
