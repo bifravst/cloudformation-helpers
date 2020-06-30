@@ -12,3 +12,29 @@ Helper functions which simplify working with AWS CloudFormation stacks.
 ## Installation
 
     npm i --save-dev @bifravst/cloudformation-helpers
+
+## Usage
+
+### `cfnResponse`
+
+`cfnResponse` implements sending custom resource responses.
+
+```typescript
+import { cfnResponse, ResponseStatus } from "@bifravst/cloudformation-helpers";
+import { CloudFormationCustomResourceEvent } from "aws-lambda";
+
+/**
+ * Lambda creating a custom resource
+ */
+export const handler = async (
+  event: CloudFormationCustomResourceEvent
+): Promise<void> => {
+  // Create custom resource ...
+
+  await cfnResponse({
+    Status: ResponseStatus.SUCCESS,
+    event,
+    PhysicalResourceId: "MyCustomResource",
+  });
+};
+```
