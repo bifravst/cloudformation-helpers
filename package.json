@@ -29,7 +29,7 @@
     "change-case": "^4.1.1"
   },
   "devDependencies": {
-    "@bifravst/code-style": "8.0.119",
+    "@bifravst/code-style": "8.0.120",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-angular": "11.0.0",
     "@types/aws-lambda": "8.10.63",
