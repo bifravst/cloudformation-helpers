@@ -25,7 +25,7 @@
   "author": "Nordic Semiconductor ASA | nordicsemi.no",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "aws-sdk": "^2.760.0",
+    "aws-sdk": "^2.761.0",
     "change-case": "^4.1.1"
   },
   "devDependencies": {
