@@ -31,7 +31,7 @@
     "@bifravst/code-style": "8.0.134",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-angular": "11.0.0",
-    "@types/aws-lambda": "8.10.67",
+    "@types/aws-lambda": "8.10.68",
     "@types/jest": "26.0.19",
     "@types/node": "14.14.16",
     "husky": "4.3.6",
