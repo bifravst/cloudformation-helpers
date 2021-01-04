@@ -1,10 +1,10 @@
-import { CloudFormation } from 'aws-sdk'
+import { Output } from '@aws-sdk/client-cloudformation'
 
-export const toObject = (output: CloudFormation.Output[]) =>
+export const toObject = (output: Output[]): Record<string, string> =>
 	output.reduce(
 		(env, { OutputKey, OutputValue }) => ({
 			...env,
 			[`${OutputKey}`]: `${OutputValue}`,
 		}),
-		{} as { [key: string]: string },
+		{} as ReturnType<typeof toObject>,
 	)
