@@ -32,7 +32,7 @@
     "@bifravst/eslint-config-typescript": "5.0.86",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-angular": "11.0.0",
-    "@types/aws-lambda": "8.10.69",
+    "@types/aws-lambda": "8.10.70",
     "@types/jest": "26.0.19",
     "@types/node": "14.14.20",
     "eslint": "7.17.0",
