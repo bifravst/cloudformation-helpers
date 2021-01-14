@@ -101,5 +101,6 @@
     }
   },
   "prettier": "@bifravst/code-style/.prettierrc.cjs",
-  "exports": "./dist/index.js"
+  "exports": "./dist/index.js",
+  "type": "module"
 }
