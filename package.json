@@ -28,7 +28,7 @@
     "@aws-sdk/client-cloudformation": "^3.1.0"
   },
   "devDependencies": {
-    "@bifravst/code-style": "8.0.134",
+    "@bifravst/code-style": "^9.0.0-use-esm.5",
     "@bifravst/eslint-config-typescript": "5.0.87",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-angular": "11.0.0",
@@ -95,5 +95,7 @@
         "diagnostics": true
       }
     }
-  }
+  },
+  "prettier": "@bifravst/code-style/.prettierrc.cjs",
+  "exports": "./dist/index.js"
 }
