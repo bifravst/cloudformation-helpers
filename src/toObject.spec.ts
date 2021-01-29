@@ -6,44 +6,44 @@ describe('toObject()', () => {
 			toObject([
 				{
 					OutputKey: 'websiteBucketName',
-					OutputValue: 'bifravst-websitbucketc74c6fbf-e126q3sws4eq',
-					ExportName: 'bifravst:websiteBucketName',
+					OutputValue: 'asset-tracker-websitbucketc74c6fbf-e126q3sws4eq',
+					ExportName: 'asset-tracker:websiteBucketName',
 				},
 				{
 					OutputKey: 'userPoolClientId',
 					OutputValue: '7mfbudbt5eq56kgo2244sa9kc8',
-					ExportName: 'bifravst:userPoolClientId',
+					ExportName: 'asset-tracker:userPoolClientId',
 				},
 				{
 					OutputKey: 'mqttEndpoint',
 					OutputValue: 'a34x44yyrk96tg-ats.iot.eu-central-1.amazonaws.com',
-					ExportName: 'bifravst:mqttEndpoint',
+					ExportName: 'asset-tracker:mqttEndpoint',
 				},
 				{
 					OutputKey: 'userPoolId',
 					OutputValue: 'eu-central-1_KBMdKxWIt',
-					ExportName: 'bifravst:userPoolId',
+					ExportName: 'asset-tracker:userPoolId',
 				},
 				{
 					OutputKey: 'identityPoolId',
 					OutputValue: 'eu-central-1:5b979419-01d8-498a-a024-c344ac2a3301',
-					ExportName: 'bifravst:identityPoolId',
+					ExportName: 'asset-tracker:identityPoolId',
 				},
 				{
 					OutputKey: 'websiteDomainName',
 					OutputValue:
-						'bifravst-websitbucketc74c6fbf-e126q3sws4eq.s3.eu-central-1.amazonaws.com',
-					ExportName: 'bifravst:websiteDomainName',
+						'asset-tracker-websitbucketc74c6fbf-e126q3sws4eq.s3.eu-central-1.amazonaws.com',
+					ExportName: 'asset-tracker:websiteDomainName',
 				},
 			]),
 		).toEqual({
-			websiteBucketName: 'bifravst-websitbucketc74c6fbf-e126q3sws4eq',
+			websiteBucketName: 'asset-tracker-websitbucketc74c6fbf-e126q3sws4eq',
 			userPoolClientId: '7mfbudbt5eq56kgo2244sa9kc8',
 			mqttEndpoint: 'a34x44yyrk96tg-ats.iot.eu-central-1.amazonaws.com',
 			userPoolId: 'eu-central-1_KBMdKxWIt',
 			identityPoolId: 'eu-central-1:5b979419-01d8-498a-a024-c344ac2a3301',
 			websiteDomainName:
-				'bifravst-websitbucketc74c6fbf-e126q3sws4eq.s3.eu-central-1.amazonaws.com',
+				'asset-tracker-websitbucketc74c6fbf-e126q3sws4eq.s3.eu-central-1.amazonaws.com',
 		})
 	})
 })

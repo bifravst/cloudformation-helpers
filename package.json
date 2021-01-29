@@ -1,5 +1,5 @@
 {
-  "name": "@bifravst/cloudformation-helpers",
+  "name": "@nordicsemiconductor/cloudformation-helpers",
   "version": "0.0.0-development",
   "description": "Helper functions which simplify working with AWS CloudFormation stacks",
   "main": "dist/index.js",
@@ -9,30 +9,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bifravst/cloudformation-helpers.git"
+    "url": "git+https://github.com/NordicSemiconductor/cloud-aws-cloudformation-helpers-js.git"
   },
   "bugs": {
-    "url": "https://github.com/bifravst/cloudformation-helpers/issues"
+    "url": "https://github.com/NordicSemiconductor/cloud-aws-cloudformation-helpers-js/issues"
   },
-  "homepage": "https://github.com/bifravst/cloudformation-helpers",
+  "homepage": "https://github.com/NordicSemiconductor/cloud-aws-cloudformation-helpers-js",
   "keywords": [
     "Cloud",
     "IoT",
-    "Bifravst",
-    "Asset Tracker",
-    "NordicSemiconductor"
+    "Asset Tracker Cloud Example",
+    "Nordic Semiconductor"
   ],
   "author": "Nordic Semiconductor ASA | nordicsemi.no",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@aws-sdk/client-cloudformation": "3.3.0",
+    "@aws-sdk/client-cloudformation": "3.4.0",
     "@types/aws-lambda": "8.10.71"
   },
   "devDependencies": {
-    "@bifravst/code-style": "8.0.134",
-    "@bifravst/eslint-config-typescript": "5.0.90",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-angular": "11.0.0",
+    "@nordicsemiconductor/asset-tracker-cloud-code-style": "9.0.0",
+    "@nordicsemiconductor/asset-tracker-cloud-eslint-config-typescript": "6.0.0",
     "@types/jest": "26.0.20",
     "@types/node": "14.14.22",
     "eslint": "7.18.0",
@@ -41,7 +40,7 @@
     "lint-staged": "10.5.3",
     "nock": "13.0.6",
     "prettier": "2.2.1",
-    "ts-jest": "26.4.4",
+    "ts-jest": "26.5.0",
     "typescript": "4.1.3"
   },
   "husky": {
@@ -87,7 +86,7 @@
       "json"
     ],
     "transform": {
-      "^.+\\.tsx?$": "ts-jest"
+      ".+\\.tsx?$": "ts-jest"
     },
     "testRegex": ".+\\.spec\\.ts$",
     "globals": {
