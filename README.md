@@ -1,3 +1,6 @@
+> **:truck: moved to https://github.com/NordicSemiconductor/cloud-aws-cloudformation-helpers-js**  
+> :information_source: [more info](https://github.com/bifravst/bifravst/issues/56)
+
 # CloudFormation Helpers [![npm version](https://img.shields.io/npm/v/@bifravst/cloudformation-helpers.svg)](https://www.npmjs.com/package/@bifravst/cloudformation-helpers)
 
 [![GitHub Actions](https://github.com/bifravst/cloudformation-helpers/workflows/Test%20and%20Release/badge.svg)](https://github.com/bifravst/cloudformation-helpers/actions)
