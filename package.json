@@ -28,7 +28,7 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "@aws-sdk/client-cloudformation": "3.4.1",
-    "@types/aws-lambda": "8.10.71"
+    "@types/aws-lambda": "8.10.72"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
