@@ -34,7 +34,7 @@
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-angular": "12.1.4",
     "@nordicsemiconductor/asset-tracker-cloud-code-style": "9.0.2",
-    "@nordicsemiconductor/eslint-config-asset-tracker-cloud-typescript": "7.0.21",
+    "@nordicsemiconductor/eslint-config-asset-tracker-cloud-typescript": "7.0.22",
     "@types/jest": "26.0.23",
     "@types/node": "14.17.0",
     "eslint": "7.27.0",
