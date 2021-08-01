@@ -36,7 +36,7 @@
     "@nordicsemiconductor/asset-tracker-cloud-code-style": "9.0.4",
     "@nordicsemiconductor/eslint-config-asset-tracker-cloud-typescript": "8.0.4",
     "@types/jest": "26.0.24",
-    "@types/node": "14.17.6",
+    "@types/node": "14.17.7",
     "eslint": "7.32.0",
     "husky": "7.0.1",
     "jest": "27.0.6",
