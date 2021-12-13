@@ -34,7 +34,7 @@
     "@nordicsemiconductor/asset-tracker-cloud-code-style": "9.2.31",
     "@types/jest": "27.0.3",
     "@types/node": "16.11.12",
-    "jest": "27.4.4",
+    "jest": "27.4.5",
     "nock": "13.2.1",
     "ts-jest": "27.1.1"
   },
