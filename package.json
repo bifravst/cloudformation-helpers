@@ -24,12 +24,12 @@
   ],
   "author": "Nordic Semiconductor ASA | nordicsemi.no",
   "license": "BSD-3-Clause",
-  "dependencies": {
-    "@aws-sdk/client-cloudformation": "3.47.1",
-    "@types/aws-lambda": "8.10.90"
+  "peerDependencies": {
+    "@aws-sdk/client-cloudformation": ">= 3 < 4"
   },
   "devDependencies": {
     "@nordicsemiconductor/asset-tracker-cloud-code-style": "11.0.12",
+    "@types/aws-lambda": "8.10.90",
     "@types/jest": "27.4.0",
     "@types/node": "16.11.21",
     "jest": "27.4.7",
