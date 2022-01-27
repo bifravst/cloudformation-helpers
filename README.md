@@ -12,7 +12,7 @@ Helper functions which simplify working with AWS CloudFormation stacks.
 
 ## Installation
 
-    npm i --save-dev @nordicsemiconductor/cloudformation-helpers
+    npm i --save-dev --save-exact @nordicsemiconductor/cloudformation-helpers
 
 ## Usage
 
