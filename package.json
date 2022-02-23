@@ -30,7 +30,7 @@
   "devDependencies": {
     "@nordicsemiconductor/asset-tracker-cloud-code-style": "11.0.29",
     "@types/aws-lambda": "8.10.92",
-    "@types/jest": "27.4.0",
+    "@types/jest": "27.4.1",
     "@types/node": "16.11.25",
     "jest": "27.5.1",
     "nock": "13.2.4",
