@@ -31,7 +31,7 @@
     "@nordicsemiconductor/asset-tracker-cloud-code-style": "11.0.58",
     "@types/aws-lambda": "8.10.95",
     "@types/jest": "27.4.1",
-    "@types/node": "16.11.29",
+    "@types/node": "16.11.31",
     "jest": "27.5.1",
     "nock": "13.2.4",
     "ts-jest": "27.1.4"
