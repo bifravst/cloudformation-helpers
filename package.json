@@ -29,12 +29,12 @@
   },
   "devDependencies": {
     "@nordicsemiconductor/asset-tracker-cloud-code-style": "11.0.61",
+    "@swc/jest": "0.2.20",
     "@types/aws-lambda": "8.10.95",
     "@types/jest": "27.5.0",
     "@types/node": "16.11.33",
     "jest": "28.0.3",
-    "nock": "13.2.4",
-    "ts-jest": "27.1.4"
+    "nock": "13.2.4"
   },
   "lint-staged": {
     "*.ts": [
@@ -65,7 +65,11 @@
     "README.md"
   ],
   "jest": {
-    "preset": "ts-jest",
+    "transform": {
+      "^.+\\.(t|j)sx?$": [
+        "@swc/jest"
+      ]
+    },
     "testRegex": ".+\\.spec\\.ts$"
   }
 }
