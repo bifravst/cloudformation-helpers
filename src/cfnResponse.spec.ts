@@ -1,4 +1,4 @@
-import * as nock from 'nock'
+import nock from 'nock'
 import * as url from 'url'
 import { cfnResponse, ResponseStatus } from './cfnResponse'
 
