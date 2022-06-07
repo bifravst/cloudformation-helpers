@@ -33,7 +33,7 @@
     "@types/aws-lambda": "8.10.98",
     "@types/jest": "28.1.1",
     "@types/node": "16.11.38",
-    "jest": "28.1.0",
+    "jest": "28.1.1",
     "nock": "13.2.6"
   },
   "lint-staged": {
