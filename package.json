@@ -32,7 +32,7 @@
     "@swc/jest": "0.2.21",
     "@types/aws-lambda": "8.10.100",
     "@types/jest": "28.1.1",
-    "@types/node": "16.11.39",
+    "@types/node": "16.11.40",
     "jest": "28.1.1",
     "nock": "13.2.6"
   },
