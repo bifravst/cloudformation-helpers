@@ -1,6 +1,6 @@
+import { CloudFormationCustomResourceEvent } from 'aws-lambda'
 import * as https from 'https'
 import * as url from 'url'
-import { CloudFormationCustomResourceEvent } from 'aws-lambda'
 
 export enum ResponseStatus {
 	SUCCESS = 'SUCCESS',
