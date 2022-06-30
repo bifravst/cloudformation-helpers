@@ -34,7 +34,7 @@
     "@types/jest": "28.1.4",
     "@types/node": "16.11.42",
     "jest": "28.1.2",
-    "nock": "13.2.7"
+    "nock": "13.2.8"
   },
   "lint-staged": {
     "*.ts": [
