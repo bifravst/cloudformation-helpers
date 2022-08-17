@@ -28,7 +28,7 @@
     "@aws-sdk/client-cloudformation": ">= 3 < 4"
   },
   "devDependencies": {
-    "@nordicsemiconductor/asset-tracker-cloud-code-style": "11.0.110",
+    "@nordicsemiconductor/asset-tracker-cloud-code-style": "11.0.111",
     "@swc/jest": "0.2.22",
     "@types/aws-lambda": "8.10.102",
     "@types/jest": "28.1.7",
