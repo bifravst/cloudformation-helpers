@@ -6,9 +6,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
