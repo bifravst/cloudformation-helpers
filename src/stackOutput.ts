@@ -13,7 +13,7 @@ export const stackOutput =
 		StackName: string,
 	): Promise<T> => {
 		const { Stacks } = await cf.send(new DescribeStacksCommand({ StackName }))
-		if (!Stacks || !Stacks.length || !Stacks[0].Outputs) {
+		if (Stacks?.[0].Outputs === undefined) {
 			throw new Error(`Stack ${StackName} not found.`)
 		}
 		return toObject(Stacks[0].Outputs) as T
