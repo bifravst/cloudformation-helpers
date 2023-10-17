@@ -1,3 +1,3 @@
-export * from './cfnResponse'
-export * from './stackOutput'
-export * from './toObject'
+export * from './cfnResponse.js'
+export * from './stackOutput.js'
+export * from './toObject.js'
