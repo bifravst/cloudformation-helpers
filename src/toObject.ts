@@ -1,4 +1,4 @@
-import { Output } from '@aws-sdk/client-cloudformation'
+import type { Output } from '@aws-sdk/client-cloudformation'
 
 export const toObject = (output: Output[]): Record<string, string> =>
 	output.reduce(
