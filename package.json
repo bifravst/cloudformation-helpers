@@ -12,7 +12,8 @@
   "type": "module",
   "scripts": {
     "test": "tsx --no-warnings --test ./src/*.spec.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "npx tsc --noEmit false --outDir ./dist -d"
   },
   "repository": {
     "type": "git",
