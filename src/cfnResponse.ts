@@ -1,4 +1,4 @@
-import { CloudFormationCustomResourceEvent } from 'aws-lambda'
+import type { CloudFormationCustomResourceEvent } from 'aws-lambda'
 import * as https from 'https'
 import * as url from 'url'
 
@@ -127,15 +127,14 @@ export const cfnResponse: CfnResponseFunc = async ({
 			`Must provide Reason when Status is ${ResponseStatus.FAILED}`,
 		)
 	}
-	const status = {
+	const status: CfnResponseFuncResult['status'] = {
 		Status,
-		Reason,
 		PhysicalResourceId,
 		StackId: event.StackId,
 		RequestId: event.RequestId,
 		LogicalResourceId: event.LogicalResourceId,
 		NoEcho: NoEcho ?? false,
-		Data,
+		Data: Data ?? {},
 	}
 	const parsedUrl = url.parse(event.ResponseURL)
 
@@ -157,9 +156,9 @@ export const cfnResponse: CfnResponseFunc = async ({
 				(res) => {
 					const data: string[] = []
 					res.on('data', (chunk) => data.push(chunk))
-					res.on('end', function () {
+					res.on('end', () => {
 						resolve({
-							statusCode: res.statusCode,
+							statusCode: res.statusCode as number,
 							body: data.join(''),
 						})
 					})
