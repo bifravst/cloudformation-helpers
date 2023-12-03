@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "18.4.3",
-    "@nordicsemiconductor/asset-tracker-cloud-code-style": "13.1.1",
+    "@nordicsemiconductor/asset-tracker-cloud-code-style": "13.1.2",
     "@nordicsemiconductor/eslint-config-asset-tracker-cloud-typescript": "17.0.0",
     "@types/aws-lambda": "8.10.130",
     "@types/node": "20.10.3",
