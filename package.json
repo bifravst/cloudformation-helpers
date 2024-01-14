@@ -43,7 +43,7 @@
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-prefer-arrow": "1.2.3",
     "eslint-plugin-unicorn": "50.0.1",
-    "nock": "13.4.0",
+    "nock": "13.5.0",
     "tsx": "4.7.0"
   },
   "lint-staged": {
