@@ -19,7 +19,7 @@
     "verbatimModuleSyntax": true,
     "baseUrl": ".",
     "paths": {
-      "asset-tracker-lwm2m": ["index.d.ts"]
-    }
-  }
+      "asset-tracker-lwm2m": ["index.d.ts"],
+    },
+  },
 }
