@@ -33,8 +33,8 @@
     "@aws-sdk/client-cloudformation": ">= 3 < 4"
   },
   "devDependencies": {
+    "@bifravst/prettier-config": "1.0.0",
     "@commitlint/config-conventional": "18.6.2",
-    "@nordicsemiconductor/asset-tracker-cloud-code-style": "13.1.16",
     "@nordicsemiconductor/eslint-config-asset-tracker-cloud-typescript": "17.0.0",
     "@types/aws-lambda": "8.10.133",
     "@types/node": "20.11.19",
