@@ -15,8 +15,8 @@
     "noImplicitAny": true,
     "noEmit": true,
     "target": "esnext",
-    "module": "ESNext",
-    "moduleResolution": "node",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "allowSyntheticDefaultImports": true
   }
 }
