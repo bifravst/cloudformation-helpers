@@ -35,7 +35,7 @@
   "devDependencies": {
     "@bifravst/eslint-config-typescript": "6.0.22",
     "@bifravst/prettier-config": "1.0.0",
-    "@commitlint/config-conventional": "19.1.0",
+    "@commitlint/config-conventional": "19.2.2",
     "@types/aws-lambda": "8.10.137",
     "@types/node": "20.12.7",
     "husky": "9.0.11",
