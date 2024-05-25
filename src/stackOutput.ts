@@ -1,7 +1,5 @@
-import {
-	CloudFormationClient,
-	DescribeStacksCommand,
-} from '@aws-sdk/client-cloudformation'
+import type { CloudFormationClient } from '@aws-sdk/client-cloudformation'
+import { DescribeStacksCommand } from '@aws-sdk/client-cloudformation'
 import { toObject } from './toObject.js'
 
 /**
