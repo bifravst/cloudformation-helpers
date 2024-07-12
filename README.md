@@ -20,10 +20,7 @@ Helper functions which simplify working with AWS CloudFormation stacks.
 `cfnResponse` implements sending custom resource responses.
 
 ```typescript
-import {
-  cfnResponse,
-  ResponseStatus,
-} from "@bifravst/cloudformation-helpers";
+import { cfnResponse, ResponseStatus } from "@bifravst/cloudformation-helpers";
 import { CloudFormationCustomResourceEvent } from "aws-lambda";
 
 /**
