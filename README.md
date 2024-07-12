@@ -1,4 +1,4 @@
-# CloudFormation Helpers [![npm version](https://img.shields.io/npm/v/@nordicsemiconductor/cloudformation-helpers.svg)](https://www.npmjs.com/package/@nordicsemiconductor/cloudformation-helpers)
+# CloudFormation Helpers [![npm version](https://img.shields.io/npm/v/rsrp-bar/cloudformation-helpers.svg)](https://www.npmjs.com/package/rsrp-bar/cloudformation-helpers)
 
 [![GitHub Actions](https://github.com/bifravst/cloudformation-helpers/workflows/Test%20and%20Release/badge.svg)](https://github.com/bifravst/cloudformation-helpers/actions)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
@@ -11,7 +11,7 @@ Helper functions which simplify working with AWS CloudFormation stacks.
 
 ## Installation
 
-    npm i --save-dev --save-exact @nordicsemiconductor/cloudformation-helpers
+    npm i --save-dev --save-exact rsrp-bar/cloudformation-helpers
 
 ## Usage
 
@@ -23,7 +23,7 @@ Helper functions which simplify working with AWS CloudFormation stacks.
 import {
   cfnResponse,
   ResponseStatus,
-} from "@nordicsemiconductor/cloudformation-helpers";
+} from "rsrp-bar/cloudformation-helpers";
 import { CloudFormationCustomResourceEvent } from "aws-lambda";
 
 /**
