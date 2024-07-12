@@ -81,5 +81,8 @@
     "LICENSE",
     "README.md"
   ],
-  "prettier": "@bifravst/prettier-config"
+  "prettier": "@bifravst/prettier-config",
+  "dependencies": {
+    "@bifravst/from-env": "3.0.2"
+  }
 }
