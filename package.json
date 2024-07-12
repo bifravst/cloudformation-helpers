@@ -1,5 +1,5 @@
 {
-  "name": "@nordicsemiconductor/cloudformation-helpers",
+  "name": "@bifravst/cloudformation-helpers",
   "version": "0.0.0-development",
   "description": "Helper functions which simplify working with AWS CloudFormation stacks",
   "types": "./dist/index.d.ts",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NordicSemiconductor/cloud-aws-cloudformation-helpers-js.git"
+    "url": "git+https://github.com/bifravst/cloudformation-helpers.git"
   },
   "bugs": {
-    "url": "https://github.com/NordicSemiconductor/cloud-aws-cloudformation-helpers-js/issues"
+    "url": "https://github.com/bifravst/cloudformation-helpers/issues"
   },
-  "homepage": "https://github.com/NordicSemiconductor/cloud-aws-cloudformation-helpers-js",
+  "homepage": "https://github.com/bifravst/cloudformation-helpers",
   "keywords": [
     "nrf-asset-tracker",
     "iot"
