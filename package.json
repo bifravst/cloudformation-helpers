@@ -36,7 +36,7 @@
     "@bifravst/eslint-config-typescript": "6.4.4",
     "@bifravst/prettier-config": "1.1.13",
     "@commitlint/config-conventional": "19.8.1",
-    "@types/aws-lambda": "8.10.153",
+    "@types/aws-lambda": "8.10.155",
     "@types/node": "22.18.8",
     "husky": "9.1.7",
     "nock": "14.0.10",
