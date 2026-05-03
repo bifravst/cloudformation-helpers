@@ -39,7 +39,7 @@
     "@types/aws-lambda": "8.10.161",
     "@types/node": "22.19.17",
     "husky": "9.1.7",
-    "nock": "14.0.13",
+    "nock": "14.0.14",
     "tsx": "4.21.0"
   },
   "lint-staged": {
