@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: "22.x"
           cache: "npm"
+      - name: Install NPM version specified in package.json
+        uses: ./.github/actions/install-npm
       - name: Authenticate with NPM registry
         run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - name: Install dependencies
