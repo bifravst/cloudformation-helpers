@@ -11,7 +11,7 @@
   },
   "type": "module",
   "scripts": {
-    "test": "tsx --no-warnings --test ./src/*.spec.ts",
+    "test": "node --experimental-strip-types --no-warnings --test ./src/*.spec.ts",
     "prepare": "husky && case \"$npm_command\" in install|ci) check-node-version --package ;; esac",
     "prepublishOnly": "npx tsc --noEmit false --outDir ./dist -d"
   },
@@ -40,8 +40,7 @@
     "@types/node": "26.2.0",
     "check-node-version": "4.2.1",
     "husky": "9.1.7",
-    "nock": "14.0.17",
-    "tsx": "4.23.12"
+    "nock": "14.0.17"
   },
   "lint-staged": {
     "*.ts": [
