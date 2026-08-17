@@ -1,6 +1,6 @@
 import type { CloudFormationClient } from '@aws-sdk/client-cloudformation'
 import { DescribeStacksCommand } from '@aws-sdk/client-cloudformation'
-import { toObject } from './toObject.js'
+import { toObject } from './toObject.ts'
 
 /**
  * Returns the outputs of a CloudFormation stack as an object

@@ -1,6 +1,6 @@
 import assert from 'node:assert'
 import { describe, it } from 'node:test'
-import { toObject } from './toObject.js'
+import { toObject } from './toObject.ts'
 
 void describe('toObject()', () => {
 	void it('should convert CloudFormation Stack Outputs to a React App environment', () =>

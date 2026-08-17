@@ -1,7 +1,6 @@
 {
   "include": ["**/*.ts"],
   "compilerOptions": {
-    "lib": ["es2019"],
     "strict": true,
     "declaration": true,
     "skipLibCheck": true,
@@ -17,6 +16,8 @@
     "target": "esnext",
     "module": "nodenext",
     "moduleResolution": "nodenext",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true
   }
 }
