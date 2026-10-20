@@ -40,7 +40,7 @@
     "@types/node": "26.6.5",
     "check-node-version": "4.2.1",
     "husky": "9.1.7",
-    "nock": "15.0.1"
+    "nock": "15.0.2"
   },
   "lint-staged": {
     "*.ts": [
