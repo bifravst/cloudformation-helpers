@@ -83,6 +83,6 @@
   ],
   "prettier": "@bifravst/prettier-config",
   "dependencies": {
-    "@bifravst/from-env": "4.0.0"
+    "@bifravst/from-env": "4.0.1"
   }
 }
