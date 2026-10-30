@@ -2,10 +2,13 @@ import type { CloudFormationCustomResourceEvent } from 'aws-lambda'
 import * as https from 'https'
 import * as url from 'url'
 
-export enum ResponseStatus {
-	SUCCESS = 'SUCCESS',
-	FAILED = 'FAILED',
-}
+export const ResponseStatus = {
+	SUCCESS: 'SUCCESS',
+	FAILED: 'FAILED',
+} as const
+
+export type ResponseStatus =
+	(typeof ResponseStatus)[keyof typeof ResponseStatus]
 
 export type CfnResponseCommonArgs = {
 	/**
@@ -77,7 +80,7 @@ export type CfnResponseFunc = {
 			/**
 			 * The status value sent by the custom resource provider in response to an AWS CloudFormation-generated request.
 			 */
-			Status: ResponseStatus.SUCCESS
+			Status: typeof ResponseStatus.SUCCESS
 			/**
 			 * Describes the reason for a failure response.
 			 *
@@ -91,7 +94,7 @@ export type CfnResponseFunc = {
 			/**
 			 * The status value sent by the custom resource provider in response to an AWS CloudFormation-generated request.
 			 */
-			Status: ResponseStatus.FAILED
+			Status: typeof ResponseStatus.FAILED
 			/**
 			 * Describes the reason for a failure response.
 			 *
